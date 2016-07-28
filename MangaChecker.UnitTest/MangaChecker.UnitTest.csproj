@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\BatotoTests.cs" />
+    <Compile Include="Providers\GameOfScanlationTests.cs" />
     <Compile Include="Providers\MangastreamTests.cs" />
     <Compile Include="Providers\WebtoonsTests.cs" />
     <Compile Include="Providers\YoMangaTests.cs" />

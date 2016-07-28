@@ -13,10 +13,9 @@ namespace MangaChecker.API.Providers.Tests
         public void GetChaptersWebtoonsTest()
         {
             var _title = "Tower of God";
-            Webtoons.SetTitle(_title);
             Webtoons.SetRSSLink("http://www.webtoons.com/en/fantasy/tower-of-god/rss?title_no=95");
 
-            var g = Webtoons.GetChapters("");
+            var g = Webtoons.GetChapters("Tower of God");
 
             var e = new List<MangaModel> {
                 new MangaModel(Settings.Webtoons,
@@ -54,14 +53,13 @@ namespace MangaChecker.API.Providers.Tests
             }
         }
 
-         [TestMethod]
-        public void GetChaptersTestTwo()
+        [TestMethod]
+        public void GetChaptersWebtoonsTestTwo()
         {
             var _title = "Tales of the Unusual";
-            Webtoons.SetTitle(_title);
             Webtoons.SetRSSLink("http://www.webtoons.com/en/thriller/tales-of-the-unusual/rss?title_no=68");
 
-            var g = Webtoons.GetChapters("");
+            var g = Webtoons.GetChapters("Tales of the Unusual");
 
             var e = new List<MangaModel> {
                 new MangaModel(Settings.Webtoons,
@@ -103,10 +101,9 @@ namespace MangaChecker.API.Providers.Tests
         public void GetLastChapterWebtoonsTest()
         {
             var _title = "Tower of God";
-            Webtoons.SetTitle(_title);
             Webtoons.SetRSSLink("http://www.webtoons.com/en/fantasy/tower-of-god/rss?title_no=95");
 
-            var g = Webtoons.GetLastChapter("");
+            var g = Webtoons.GetLastChapter("Tower of God");
             var e = new MangaModel(
                 Settings.Webtoons,
                 _title,

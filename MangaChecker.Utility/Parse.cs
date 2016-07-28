@@ -17,7 +17,9 @@ namespace MangaChecker.Utility
                 case Settings.Batoto:
                     return batoto(manga);
                 case Settings.YoManga:
-                    return yomanga(manga);
+                    return yoManga(manga);
+                case Settings.GameOfScanlation:
+                    return gameOfScanlation(manga);
                 default:
                     break;
             }
@@ -35,15 +37,15 @@ namespace MangaChecker.Utility
 
         private static MangaModel webtoons(MangaModel manga)
         {
-            if (manga.Title.IndexOf("Ep.") > 0)
+            if (manga.Chapter.IndexOf("Ep.") > 0)
             {
-                var _splitTitle = manga.Title.Split('.');
-                manga.Chapter = _splitTitle.Last().Trim(' ');
+                var _splitChapter = manga.Chapter.Split('.');
+                manga.Chapter = _splitChapter.Last().Trim(' ');
             }
             else
             {
-                var _splitTitle = manga.Title.Split('.');
-                manga.Chapter = _splitTitle[1].Split('-')[0].Trim(' ');
+                var _splitChapter = manga.Chapter.Split('.');
+                manga.Chapter = _splitChapter[1].Split('-')[0].Trim(' ');
             }
 
             return manga;
@@ -72,7 +74,7 @@ namespace MangaChecker.Utility
             return manga;
         }
 
-        private static MangaModel yomanga(MangaModel manga)
+        private static MangaModel yoManga(MangaModel manga)
         {
             // Lady Garden Chapter 10
             var _splitTitle = manga.Title.Split(' ').ToList();
@@ -80,6 +82,14 @@ namespace MangaChecker.Utility
             _splitTitle.RemoveAt(_splitTitle.Count - 1);
             _splitTitle.RemoveAt(_splitTitle.Count - 1);
             manga.Title = string.Join(" ", _splitTitle);
+            return manga;
+        }
+
+         private static MangaModel gameOfScanlation(MangaModel manga)
+        {
+            // Lady Garden Chapter 10
+            var _splitTitle = manga.Chapter.Split(' ').ToList();
+            manga.Chapter = _splitTitle.Last().ToString();
             return manga;
         }
     }

@@ -9,15 +9,6 @@ namespace MangaChecker.API.Providers
     {
         private static List<MangaModel> _allMangas;
         private static string _RSSURL;
-        private static string _title;
-
-        public static void SetTitle(string title)
-        {
-            if (title != "")
-            {
-                _title = title;
-            }
-        }
 
         public static void SetRSSLink(string link)
         {
@@ -34,7 +25,7 @@ namespace MangaChecker.API.Providers
 
             foreach (var item in _rss.Items)
             {
-                var _manga = new MangaModel(Settings.Webtoons, item.Title.Text, item.Title.Text, item.Links[0].Uri.AbsoluteUri, Settings.Webtoons, DateTime.Now);
+                var _manga = new MangaModel(Settings.Webtoons, _rss.Title.Text, item.Title.Text, item.Links[0].Uri.AbsoluteUri, Settings.Webtoons, DateTime.Now);
                 _manga = Parse.Chapter(Settings.Webtoons, _manga);
                 _allMangas.Add(_manga);
             }
@@ -45,14 +36,12 @@ namespace MangaChecker.API.Providers
         public static List<MangaModel> GetChapters(string title)
         {
             _allMangas = _getAllMangas();
-            _allMangas.ForEach((m) => { m.Title = _title; });
             return _allMangas;
         }
 
         public static MangaModel GetLastChapter(string title)
         {
             _allMangas = _getAllMangas();
-            _allMangas.ForEach((m) => { m.Title = _title; });
             return _allMangas[0];
         }
     }
