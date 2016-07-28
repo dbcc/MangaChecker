@@ -17,7 +17,7 @@ namespace MangaChecker.API.Providers.Tests
         //<guid isPermaLink = "true" > http://mangastream.com/r/bleach/683/3549/1</guid>
 
         [TestMethod]
-        public void GetChaptersTest()
+        public void GetChaptersMangastreamTest()
         {
             var _title = "The Seven Deadly Sins";
 
@@ -63,7 +63,7 @@ namespace MangaChecker.API.Providers.Tests
         }
 
         [TestMethod]
-        public void GetLastChapterTest()
+        public void GetLastChapterMangastreamTest()
         {
             var _title = "Bleach";
 

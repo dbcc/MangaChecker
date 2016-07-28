@@ -10,7 +10,7 @@ namespace MangaChecker.API.Providers.Tests
     public class WebtoonsTests
     {
         [TestMethod]
-        public void GetChaptersTest()
+        public void GetChaptersWebtoonsTest()
         {
             var _title = "Tower of God";
             Webtoons.SetTitle(_title);
@@ -100,7 +100,7 @@ namespace MangaChecker.API.Providers.Tests
         }
 
         [TestMethod]
-        public void GetLastChapterTest()
+        public void GetLastChapterWebtoonsTest()
         {
             var _title = "Tower of God";
             Webtoons.SetTitle(_title);
