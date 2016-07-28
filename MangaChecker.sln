@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.UnitTest", "MangaChecker.UnitTest\MangaChecker.UnitTest.csproj", "{3E6AE7F0-8964-4842-9BA8-849E19757C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.Models", "MangaChecker.MangaModel\MangaChecker.Models.csproj", "{66641981-B8CE-453B-84D5-858623AB21FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.UI", "MangaChecker.UI\MangaChecker.UI.csproj", "{EA436443-2851-4FB5-BDDF-80A89A4DE352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.Utility", "MangaChecker.Utility\MangaChecker.Utility.csproj", "{0D99976B-31A3-4759-ACFD-689B62C606CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.CLI", "MangaChecker.CLI\MangaChecker.CLI.csproj", "{C5BF7EAE-218F-4FE1-BBA3-969365064FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.API", "MangaChecker.API\MangaChecker.API.csproj", "{B2415D7E-98A1-4FDD-9E50-71C376ED44FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E6AE7F0-8964-4842-9BA8-849E19757C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6AE7F0-8964-4842-9BA8-849E19757C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6AE7F0-8964-4842-9BA8-849E19757C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6AE7F0-8964-4842-9BA8-849E19757C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66641981-B8CE-453B-84D5-858623AB21FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66641981-B8CE-453B-84D5-858623AB21FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66641981-B8CE-453B-84D5-858623AB21FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66641981-B8CE-453B-84D5-858623AB21FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA436443-2851-4FB5-BDDF-80A89A4DE352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA436443-2851-4FB5-BDDF-80A89A4DE352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA436443-2851-4FB5-BDDF-80A89A4DE352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA436443-2851-4FB5-BDDF-80A89A4DE352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D99976B-31A3-4759-ACFD-689B62C606CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D99976B-31A3-4759-ACFD-689B62C606CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D99976B-31A3-4759-ACFD-689B62C606CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D99976B-31A3-4759-ACFD-689B62C606CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BF7EAE-218F-4FE1-BBA3-969365064FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BF7EAE-218F-4FE1-BBA3-969365064FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BF7EAE-218F-4FE1-BBA3-969365064FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BF7EAE-218F-4FE1-BBA3-969365064FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2415D7E-98A1-4FDD-9E50-71C376ED44FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2415D7E-98A1-4FDD-9E50-71C376ED44FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2415D7E-98A1-4FDD-9E50-71C376ED44FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2415D7E-98A1-4FDD-9E50-71C376ED44FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="http://mangastream.com/rss" rel="self" type="application/rss+xml" />
+<title>MangaStream Releases</title>
+<link>http://mangastream.com/rss</link>
+<description>The latest MangaStream.com Releases</description>
+<language>en</language>
+<ttl>30</ttl>
+
+<item>
+    <title>Vinland Saga 130</title>
+    <link>http://mangastream.com/read/vinland_saga/130/3564/1</link>
+    <pubDate>Tue, 26 Jul 2016 3:19:30 -0700</pubDate>
+    <description>The Baltic Sea War 6</description>
+    <guid isPermaLink="true">http://mangastream.com/r/vinland_saga/130/3564/1</guid>
+</item>
+
+<item>
+    <title>Akame Ga Kill 073</title>
+    <link>http://mangastream.com/read/akame_ga_kill/073/3563/1</link>
+    <pubDate>Tue, 26 Jul 2016 10:37:26 -0700</pubDate>
+    <description>Kill the Supreme</description>
+    <guid isPermaLink="true">http://mangastream.com/r/akame_ga_kill/073/3563/1</guid>
+</item>
+
+<item>
+    <title>Hajime no Ippo 1148</title>
+    <link>http://mangastream.com/read/hajime_no_ippo/1148/3562/1</link>
+    <pubDate>Mon, 25 Jul 2016 5:05:57 -0700</pubDate>
+    <description>The Forging</description>
+    <guid isPermaLink="true">http://mangastream.com/r/hajime_no_ippo/1148/3562/1</guid>
+</item>
+
+<item>
+    <title>Fairy Tail 495</title>
+    <link>http://mangastream.com/read/fairy_tail/495/3561/1</link>
+    <pubDate>Mon, 25 Jul 2016 3:19:21 -0700</pubDate>
+    <description>I'm Hungry as Hell!</description>
+    <guid isPermaLink="true">http://mangastream.com/r/fairy_tail/495/3561/1</guid>
+</item>
+
+<item>
+    <title>The Seven Deadly Sins 185</title>
+    <link>http://mangastream.com/read/the_seven_deadly_sins/185/3560/1</link>
+    <pubDate>Mon, 25 Jul 2016 1:17:42 -0700</pubDate>
+    <description>Pride vs. Charity</description>
+    <guid isPermaLink="true">http://mangastream.com/r/the_seven_deadly_sins/185/3560/1</guid>
+</item>
+
+<item>
+    <title>The Memorandum of Kyoko Okitegami 004</title>
+    <link>http://mangastream.com/read/okitegami/004/3559/1</link>
+    <pubDate>Sat, 23 Jul 2016 9:35:40 -0700</pubDate>
+    <description>Kakushidate Yakusuke 4</description>
+    <guid isPermaLink="true">http://mangastream.com/r/okitegami/004/3559/1</guid>
+</item>
+
+<item>
+    <title>Tokyo Ghoul:re 086</title>
+    <link>http://mangastream.com/read/tokyo_ghoulre/086/3558/1</link>
+    <pubDate>Sat, 23 Jul 2016 9:05:14 -0700</pubDate>
+    <description>White Rainbow</description>
+    <guid isPermaLink="true">http://mangastream.com/r/tokyo_ghoulre/086/3558/1</guid>
+</item>
+
+<item>
+    <title>One-Punch Man 061.4</title>
+    <link>http://mangastream.com/read/onepunch_man/061.4/3557/1</link>
+    <pubDate>Sat, 23 Jul 2016 7:36:24 -0700</pubDate>
+    <description>Part 4</description>
+    <guid isPermaLink="true">http://mangastream.com/r/onepunch_man/061.4/3557/1</guid>
+</item>
+
+<item>
+    <title>Billy Bat 160</title>
+    <link>http://mangastream.com/read/billy_bat/160/3556/1</link>
+    <pubDate>Fri, 22 Jul 2016 1:52:18 -0700</pubDate>
+    <description>The Final Word</description>
+    <guid isPermaLink="true">http://mangastream.com/r/billy_bat/160/3556/1</guid>
+</item>
+
+<item>
+    <title>My Hero Academia 100</title>
+    <link>http://mangastream.com/read/my_hero_academia/100/3555/1</link>
+    <pubDate>Thu, 21 Jul 2016 11:46:48 -0700</pubDate>
+    <description>Special Moves</description>
+    <guid isPermaLink="true">http://mangastream.com/r/my_hero_academia/100/3555/1</guid>
+</item>
+
+<item>
+    <title>Weekly Shonen Jump Author Comments #7</title>
+    <link>http://mangastream.com/read/wsjac/%237/3554/1</link>
+    <pubDate>Thu, 21 Jul 2016 10:13:16 -0700</pubDate>
+    <description>Issue 34 / 2016</description>
+    <guid isPermaLink="true">http://mangastream.com/r/wsjac/%237/3554/1</guid>
+</item>
+
+<item>
+    <title>Toriko 380</title>
+    <link>http://mangastream.com/read/toriko/380/3553/1</link>
+    <pubDate>Thu, 21 Jul 2016 8:32:12 -0700</pubDate>
+    <description>The Competition for GOD!!</description>
+    <guid isPermaLink="true">http://mangastream.com/r/toriko/380/3553/1</guid>
+</item>
+
+<item>
+    <title>Haikyuu!! 215</title>
+    <link>http://mangastream.com/read/haikyuu/215/3552/1</link>
+    <pubDate>Thu, 21 Jul 2016 7:21:08 -0700</pubDate>
+    <description>Sound</description>
+    <guid isPermaLink="true">http://mangastream.com/r/haikyuu/215/3552/1</guid>
+</item>
+
+<item>
+    <title>Shokugeki no Souma 176</title>
+    <link>http://mangastream.com/read/shokugeki_no_souma/176/3551/1</link>
+    <pubDate>Thu, 21 Jul 2016 6:15:11 -0700</pubDate>
+    <description>Mischief on a Snowy Day</description>
+    <guid isPermaLink="true">http://mangastream.com/r/shokugeki_no_souma/176/3551/1</guid>
+</item>
+
+<item>
+    <title>One Piece 833</title>
+    <link>http://mangastream.com/read/one_piece/833/3550/1</link>
+    <pubDate>Thu, 21 Jul 2016 4:30:52 -0700</pubDate>
+    <description>Vinsmoke Judge</description>
+    <guid isPermaLink="true">http://mangastream.com/r/one_piece/833/3550/1</guid>
+</item>
+
+<item>
+    <title>Bleach 683</title>
+    <link>http://mangastream.com/read/bleach/683/3549/1</link>
+    <pubDate>Thu, 21 Jul 2016 2:42:14 -0700</pubDate>
+    <description>The Dark Side of Two World Ends</description>
+    <guid isPermaLink="true">http://mangastream.com/r/bleach/683/3549/1</guid>
+</item>
+
+<item>
+    <title>Sahara the Flower Samurai 01</title>
+    <link>http://mangastream.com/read/sahara/01/3548/1</link>
+    <pubDate>Wed, 20 Jul 2016 3:33:53 -0700</pubDate>
+    <description>Sahara</description>
+    <guid isPermaLink="true">http://mangastream.com/r/sahara/01/3548/1</guid>
+</item>
+
+<item>
+    <title>Billy Bat 159</title>
+    <link>http://mangastream.com/read/billy_bat/159/3547/1</link>
+    <pubDate>Wed, 20 Jul 2016 6:04:44 -0700</pubDate>
+    <description>Extra Super Moon</description>
+    <guid isPermaLink="true">http://mangastream.com/r/billy_bat/159/3547/1</guid>
+</item>
+
+<item>
+    <title>The Seven Deadly Sins Special</title>
+    <link>http://mangastream.com/read/the_seven_deadly_sins/Special/3546/1</link>
+    <pubDate>Tue, 19 Jul 2016 1:00:44 -0700</pubDate>
+    <description>Sins on Vacation</description>
+    <guid isPermaLink="true">http://mangastream.com/r/the_seven_deadly_sins/Special/3546/1</guid>
+</item>
+
+<item>
+    <title>Black Butler 118</title>
+    <link>http://mangastream.com/read/black_butler/118/3545/1</link>
+    <pubDate>Mon, 18 Jul 2016 11:44:45 -0700</pubDate>
+    <description>That Butler, Remodeling</description>
+    <guid isPermaLink="true">http://mangastream.com/r/black_butler/118/3545/1</guid>
+</item>
+
+<item>
+    <title>Hajime no Ippo 1147</title>
+    <link>http://mangastream.com/read/hajime_no_ippo/1147/3544/1</link>
+    <pubDate>Sun, 17 Jul 2016 5:09:22 -0700</pubDate>
+    <description>A New Orbit</description>
+    <guid isPermaLink="true">http://mangastream.com/r/hajime_no_ippo/1147/3544/1</guid>
+</item>
+
+<item>
+    <title>Fairy Tail 494</title>
+    <link>http://mangastream.com/read/fairy_tail/494/3543/1</link>
+    <pubDate>Sat, 16 Jul 2016 5:42:09 -0700</pubDate>
+    <description>The Hill Extending Towards Tomorrow</description>
+    <guid isPermaLink="true">http://mangastream.com/r/fairy_tail/494/3543/1</guid>
+</item>
+
+<item>
+    <title>The Seven Deadly Sins 184</title>
+    <link>http://mangastream.com/read/the_seven_deadly_sins/184/3542/1</link>
+    <pubDate>Sat, 16 Jul 2016 3:04:59 -0700</pubDate>
+    <description>Clash of Titans!!</description>
+    <guid isPermaLink="true">http://mangastream.com/r/the_seven_deadly_sins/184/3542/1</guid>
+</item>
+
+<item>
+    <title>D.Gray-man 223</title>
+    <link>http://mangastream.com/read/dgrayman/223/3541/1</link>
+    <pubDate>Fri, 15 Jul 2016 12:11:55 -0700</pubDate>
+    <description>Searching for A.W - To My Way</description>
+    <guid isPermaLink="true">http://mangastream.com/r/dgrayman/223/3541/1</guid>
+</item>
+
+
+</channel>
+</rss>
