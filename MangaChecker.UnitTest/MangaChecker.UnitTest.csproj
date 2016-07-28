@@ -46,6 +46,7 @@
     <Compile Include="Providers\BatotoTests.cs" />
     <Compile Include="Providers\MangastreamTests.cs" />
     <Compile Include="Providers\WebtoonsTests.cs" />
+    <Compile Include="Providers\YoMangaTests.cs" />
     <Compile Include="ToolsTests.cs" />
   </ItemGroup>
   <ItemGroup>

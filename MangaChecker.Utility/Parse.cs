@@ -16,6 +16,8 @@ namespace MangaChecker.Utility
                     return webtoons(manga);
                 case Settings.Batoto:
                     return batoto(manga);
+                case Settings.YoManga:
+                    return yomanga(manga);
                 default:
                     break;
             }
@@ -67,6 +69,17 @@ namespace MangaChecker.Utility
             _chapterEnd = _titleToParsev1.IndexOf(" ", _chapterStart);
             manga.Chapter = _titleToParsev1.Substring(_chapterStart, _chapterEnd - _chapterStart);
 
+            return manga;
+        }
+
+        private static MangaModel yomanga(MangaModel manga)
+        {
+            // Lady Garden Chapter 10
+            var _splitTitle = manga.Title.Split(' ').ToList();
+            manga.Chapter = _splitTitle.Last().ToString();
+            _splitTitle.RemoveAt(_splitTitle.Count - 1);
+            _splitTitle.RemoveAt(_splitTitle.Count - 1);
+            manga.Title = string.Join(" ", _splitTitle);
             return manga;
         }
     }

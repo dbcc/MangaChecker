@@ -1,9 +1,9 @@
 ﻿using RestSharp;
 using System;
-using System.ServiceModel.Syndication;
-using System.Xml;
-using System.Text.RegularExpressions;
 using System.IO;
+using System.ServiceModel.Syndication;
+using System.Text.RegularExpressions;
+using System.Xml;
 
 namespace MangaChecker.Utility
 {
@@ -32,7 +32,7 @@ namespace MangaChecker.Utility
 
         public static SyndicationFeed GetFeed(string url, string provider)
         {
-            string _content = Tools.DownloadData(url);
+            string _content = DownloadData(url);
 
             _content = normalizeXML(_content, provider);
 
@@ -57,6 +57,11 @@ namespace MangaChecker.Utility
                         .Replace("lastBuildDate", "fuck2");
                     _newXML = Regex.Replace(_newXML, "<img src=\".+\"  />", "");
                     break;
+                case Settings.YoManga:
+                     _newXML = oldXML.Replace("<img src=\"", "")
+                        .Replace("\"  /></description>", "</description>")
+                        .Replace("pubDate", "fuck");
+                     break;
                 default:
                     _newXML = oldXML;
                     break;
