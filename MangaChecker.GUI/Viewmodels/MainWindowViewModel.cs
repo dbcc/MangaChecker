@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Net.Mime;
-using System.Text;
+﻿using System.Collections.ObjectModel;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using MangaChecker.ViewModels.dependencies;
+using MangaChecker.GUI.dependencies;
 using MangaChecker.Models;
 using MaterialDesignThemes.Wpf;
 
-namespace MangaChecker.ViewModels
+namespace MangaChecker.GUI.Viewmodels
 {
     public class MainWindowViewModel : ViewModelBase {
         public static readonly ObservableCollection<MangaModel> MangasInternal =

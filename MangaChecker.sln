@@ -15,10 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.API", "MangaCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.Database", "MangaChecker.Database\MangaChecker.Database.csproj", "{A6DEFB44-9D54-4929-ABC4-AABA25FA2C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.Views", "MangaChecker.Views\MangaChecker.Views.csproj", "{29C09929-6857-4E29-A9AB-6CE7D4163E42}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.ViewModels", "MangaChecker.ViewModels\MangaChecker.ViewModels.csproj", "{0754E79E-74DA-47F0-9B4B-ED08A43A2E65}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaChecker.GUI", "MangaChecker.GUI\MangaChecker.GUI.csproj", "{681B11FC-73C6-4707-BE9C-58E2A0B9AF0A}"
 EndProject
 Global
@@ -51,14 +47,6 @@ Global
 		{A6DEFB44-9D54-4929-ABC4-AABA25FA2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6DEFB44-9D54-4929-ABC4-AABA25FA2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6DEFB44-9D54-4929-ABC4-AABA25FA2C88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29C09929-6857-4E29-A9AB-6CE7D4163E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29C09929-6857-4E29-A9AB-6CE7D4163E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29C09929-6857-4E29-A9AB-6CE7D4163E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29C09929-6857-4E29-A9AB-6CE7D4163E42}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0754E79E-74DA-47F0-9B4B-ED08A43A2E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0754E79E-74DA-47F0-9B4B-ED08A43A2E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0754E79E-74DA-47F0-9B4B-ED08A43A2E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0754E79E-74DA-47F0-9B4B-ED08A43A2E65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{681B11FC-73C6-4707-BE9C-58E2A0B9AF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{681B11FC-73C6-4707-BE9C-58E2A0B9AF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681B11FC-73C6-4707-BE9C-58E2A0B9AF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
