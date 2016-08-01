@@ -22,5 +22,7 @@ namespace MangaChecker.GUI.Properties {
                 return defaultInstance;
             }
         }
+
+        public string Debug { get; set; }
     }
 }

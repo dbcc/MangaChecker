@@ -1,11 +1,10 @@
-﻿using MangaChecker.Models;
-using System.Linq;
+﻿using System.Linq;
 
 namespace MangaChecker.Utility
 {
     public static class Parse
     {
-        public static MangaModel Chapter(string provider, MangaModel manga)
+        public static MangaModel.MangaModel Chapter(string provider, MangaModel.MangaModel manga)
         {
 
             switch (provider)
@@ -26,16 +25,16 @@ namespace MangaChecker.Utility
             return manga;
         }
 
-        private static MangaModel mangastream(MangaModel manga)
+        private static MangaModel.MangaModel mangastream(MangaModel.MangaModel manga)
         {
-            var _splitTitle = manga.Title.Split(' ').ToList();
+            var _splitTitle = manga.Name.Split(' ').ToList();
             manga.Chapter = _splitTitle.Last().ToString();
             _splitTitle.RemoveAt(_splitTitle.Count - 1);
-            manga.Title = string.Join(" ", _splitTitle);
+            manga.Name = string.Join(" ", _splitTitle);
             return manga;
         }
 
-        private static MangaModel webtoons(MangaModel manga)
+        private static MangaModel.MangaModel webtoons(MangaModel.MangaModel manga)
         {
             if (manga.Chapter.IndexOf("Ep.") > 0)
             {
@@ -51,17 +50,17 @@ namespace MangaChecker.Utility
             return manga;
         }
 
-        private static MangaModel batoto(MangaModel manga)
+        private static MangaModel.MangaModel batoto(MangaModel.MangaModel manga)
         {
             // Boku no Hero Academia - English - Ch.100: Whip Up Some Super Moves
             // Fire Punch - English - Ch.13 Read Online
             // Dead Dead Demon's Dededededestruction - English - Vol.5 Ch.39 Read Online
             // Love is Hard for Otaku - English - Vol.2 Ch.7.2 Read Online
-            var _titleToParse = manga.Title;
+            var _titleToParse = manga.Name;
             int _titleEnd;
 
             _titleEnd = _titleToParse.IndexOf(" - English - ");
-            manga.Title = _titleToParse.Substring(0, _titleEnd);
+            manga.Name = _titleToParse.Substring(0, _titleEnd);
 
             int _chapterStart;
             int _chapterEnd;
@@ -74,18 +73,18 @@ namespace MangaChecker.Utility
             return manga;
         }
 
-        private static MangaModel yoManga(MangaModel manga)
+        private static MangaModel.MangaModel yoManga(MangaModel.MangaModel manga)
         {
             // Lady Garden Chapter 10
-            var _splitTitle = manga.Title.Split(' ').ToList();
+            var _splitTitle = manga.Name.Split(' ').ToList();
             manga.Chapter = _splitTitle.Last().ToString();
             _splitTitle.RemoveAt(_splitTitle.Count - 1);
             _splitTitle.RemoveAt(_splitTitle.Count - 1);
-            manga.Title = string.Join(" ", _splitTitle);
+            manga.Name = string.Join(" ", _splitTitle);
             return manga;
         }
 
-         private static MangaModel gameOfScanlation(MangaModel manga)
+         private static MangaModel.MangaModel gameOfScanlation(MangaModel.MangaModel manga)
         {
             // Lady Garden Chapter 10
             var _splitTitle = manga.Chapter.Split(' ').ToList();

@@ -1,5 +1,4 @@
-﻿using MangaChecker.Models;
-using MangaChecker.Utility;
+﻿using MangaChecker.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -18,8 +17,8 @@ namespace MangaChecker.API.Providers.Tests
 
             var g = Batoto.GetChapters(_title);
 
-            var e = new List<MangaModel>{
-                new MangaModel(
+            var e = new List<MangaModel.MangaModel>{
+                new MangaModel.MangaModel(
                     Settings.Batoto,
                     _title,
                     "14",
@@ -27,7 +26,7 @@ namespace MangaChecker.API.Providers.Tests
                     _rss,
                     DateTime.Now
                 ),
-                new MangaModel(
+                new MangaModel.MangaModel(
                     Settings.Batoto,
                     _title,
                     "13",
@@ -45,7 +44,7 @@ namespace MangaChecker.API.Providers.Tests
             var count = 0;
             foreach (var got in g)
             {
-                Assert.AreEqual(got.Title, e[count].Title);
+                Assert.AreEqual(got.Name, e[count].Name);
                 Assert.AreEqual(got.Chapter, e[count].Chapter);
                 Assert.AreEqual(got.Link, e[count].Link);
                 count++;
@@ -61,7 +60,7 @@ namespace MangaChecker.API.Providers.Tests
 
             var g = Batoto.GetLastChapter(_title);
 
-            var e = new MangaModel(
+            var e = new MangaModel.MangaModel(
                     Settings.Batoto,
                     _title,
                     "14",
@@ -75,7 +74,7 @@ namespace MangaChecker.API.Providers.Tests
                 Assert.Fail();
             }
 
-            Assert.AreEqual(g.Title, e.Title);
+            Assert.AreEqual(g.Name, e.Name);
             Assert.AreEqual(g.Chapter, e.Chapter);
             Assert.AreEqual(g.Link, e.Link);
         }

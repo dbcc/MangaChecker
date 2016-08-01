@@ -1,5 +1,4 @@
-﻿using MangaChecker.Models;
-using MangaChecker.Utility;
+﻿using MangaChecker.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -17,22 +16,22 @@ namespace MangaChecker.Providers.Tests
             YoManga.SetTitle(_title);
             var g = YoManga.GetChapters(_title);
 
-            var e = new List<MangaModel> {
-                new MangaModel(
+            var e = new List<MangaModel.MangaModel> {
+                new MangaModel.MangaModel(
                     Settings.YoManga,
                     _title,
                     "10",
                     "http://yomanga.co/reader/read/lady_garden/en/0/10/",
                     "",
                     DateTime.Now),
-                new MangaModel(
+                new MangaModel.MangaModel(
                     Settings.YoManga,
                     _title,
                     "9",
                     "http://yomanga.co/reader/read/lady_garden/en/0/9/",
                     "",
                     DateTime.Now),
-                new MangaModel(
+                new MangaModel.MangaModel(
                     Settings.YoManga,
                     _title,
                     "8",
@@ -49,7 +48,7 @@ namespace MangaChecker.Providers.Tests
             var count = 0;
             foreach (var ex in e)
             {
-                Assert.AreEqual(ex.Title, g[count].Title);
+                Assert.AreEqual(ex.Name, g[count].Name);
                 Assert.AreEqual(ex.Chapter, g[count].Chapter);
                 Assert.AreEqual(ex.Link, g[count].Link);
                 count++;
@@ -64,8 +63,8 @@ namespace MangaChecker.Providers.Tests
             YoManga.SetTitle(_title);
             var g = YoManga.GetChapters(_title);
 
-            var e = new List<MangaModel> {
-                new MangaModel(
+            var e = new List<MangaModel.MangaModel> {
+                new MangaModel.MangaModel(
                     Settings.YoManga,
                     _title,
                     "10",
@@ -78,7 +77,7 @@ namespace MangaChecker.Providers.Tests
             {
                 Assert.Fail();
             }
-            Assert.AreEqual(g[0].Title, e[0].Title);
+            Assert.AreEqual(g[0].Name, e[0].Name);
             Assert.AreEqual(g[0].Chapter, e[0].Chapter);
         }
     }

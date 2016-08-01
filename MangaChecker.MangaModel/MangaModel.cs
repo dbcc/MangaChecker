@@ -1,22 +1,27 @@
 ﻿using System;
+using System.Runtime.InteropServices.WindowsRuntime;
+using PropertyChanged;
 
-namespace MangaChecker.Models
+namespace MangaChecker.MangaModel
 {
+    [ImplementPropertyChanged]
     public class MangaModel
     {
+        public int Id { get; set; }
         public string Provider { get; set; }
         //public string Cover { get; set; }
-        public string Title { get; set; }
+        public string Name { get; set; }
+        public string FullName => $"{Name} {Chapter}";
         public string Chapter { get; set; }
         public string Link { get; set; }
         public string RSS { get; set; }
         public DateTime Updated { get; set; }
         public bool Read { get; set; }
 
-        public MangaModel(string provider, string title, string chapter, string link, string rss, DateTime updated)
+        public MangaModel(string provider, string name, string chapter, string link, string rss = "placeholder", DateTime updated = default(DateTime))
         {
             Provider = provider;
-            Title = title;
+            Name = name;
             Chapter = chapter;
             Link = link;
             RSS = rss;
@@ -24,8 +29,7 @@ namespace MangaChecker.Models
             Read = false;
         }
 
-        public MangaModel()
-        {
+        public MangaModel() {
         }
     }
 }

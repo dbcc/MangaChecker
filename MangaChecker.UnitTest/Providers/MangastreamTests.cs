@@ -1,5 +1,4 @@
-﻿using MangaChecker.Models;
-using MangaChecker.Utility;
+﻿using MangaChecker.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -23,22 +22,22 @@ namespace MangaChecker.API.Providers.Tests
 
             var g = Mangastream.GetChapters(_title);
 
-            var e = new List<MangaModel> {
-                new MangaModel(
+            var e = new List<MangaModel.MangaModel> {
+                new MangaModel.MangaModel(
                     Settings.Mangastream,
                     _title,
                     "185",
                     "http://mangastream.com/r/the_seven_deadly_sins/185/3560/1",
                     Settings.MangastreamURL,
                     DateTime.Now),
-                new MangaModel(
+                new MangaModel.MangaModel(
                     Settings.Mangastream,
                     _title,
                     "Special",
                     "http://mangastream.com/r/the_seven_deadly_sins/Special/3546/1",
                     Settings.MangastreamURL,
                     DateTime.Now),
-                new MangaModel(
+                new MangaModel.MangaModel(
                     Settings.Mangastream,
                     _title,
                     "184",
@@ -55,7 +54,7 @@ namespace MangaChecker.API.Providers.Tests
             var count = 0;
             foreach (var got in g)
             {
-                Assert.AreEqual(got.Title, e[count].Title);
+                Assert.AreEqual(got.Name, e[count].Name);
                 Assert.AreEqual(got.Chapter, e[count].Chapter);
                 Assert.AreEqual(got.Link, e[count].Link);
                 count++;
@@ -69,15 +68,15 @@ namespace MangaChecker.API.Providers.Tests
 
             var g = Mangastream.GetChapters(_title);
 
-            var e = new List<MangaModel> {
-                new MangaModel(Settings.Mangastream, _title, "683", "http://mangastream.com/read/bleach/683/3549/1", Settings.MangastreamURL, DateTime.Now),
+            var e = new List<MangaModel.MangaModel> {
+                new MangaModel.MangaModel(Settings.Mangastream, _title, "683", "http://mangastream.com/read/bleach/683/3549/1", Settings.MangastreamURL, DateTime.Now),
             };
 
             if (g.Count == 0)
             {
                 Assert.Fail();
             }
-            Assert.AreEqual(g[0].Title, e[0].Title);
+            Assert.AreEqual(g[0].Name, e[0].Name);
             Assert.AreEqual(g[0].Chapter, e[0].Chapter);
         }
     }

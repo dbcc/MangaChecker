@@ -22,5 +22,9 @@ namespace MangaChecker.GUI {
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void DebugTextBox_OnTextChanged(object sender, TextChangedEventArgs e) {
+            DebugTextBox.ScrollToEnd();
+        }
     }
 }

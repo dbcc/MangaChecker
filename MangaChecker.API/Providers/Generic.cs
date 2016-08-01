@@ -1,27 +1,26 @@
-﻿using MangaChecker.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace MangaChecker.Providers
+namespace MangaChecker.API.Providers
 {
     class Generic
     {
-        private IList<MangaModel> _allMangas;
-        private IList<MangaModel> _getAllMangas()
+        private IList<MangaModel.MangaModel> _allMangas;
+        private IList<MangaModel.MangaModel> _getAllMangas()
         {
             // implement
             return _allMangas;
         }
 
-        public IList<MangaModel> GetChapters(string title)
+        public IList<MangaModel.MangaModel> GetChapters(string title)
         {
-            var _mangas = new List<MangaModel>();
+            var _mangas = new List<MangaModel.MangaModel>();
             // implement
             return _mangas;
         }
 
-        public MangaModel GetLastChapter(string title)
+        public MangaModel.MangaModel GetLastChapter(string title)
         {
-            var _chapter = new MangaModel();
+            var _chapter = new MangaModel.MangaModel();
             // implement
             return _chapter;
         }

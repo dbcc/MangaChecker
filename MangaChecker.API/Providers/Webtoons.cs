@@ -1,5 +1,4 @@
-﻿using MangaChecker.Models;
-using MangaChecker.Utility;
+﻿using MangaChecker.Utility;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace MangaChecker.API.Providers
 {
     public static class Webtoons
     {
-        private static List<MangaModel> _allMangas;
+        private static List<MangaModel.MangaModel> _allMangas;
         private static string _RSSURL;
 
         public static void SetRSSLink(string link)
@@ -18,14 +17,14 @@ namespace MangaChecker.API.Providers
             }
         }
 
-        private static List<MangaModel> _getAllMangas()
+        private static List<MangaModel.MangaModel> _getAllMangas()
         {
-            _allMangas = new List<MangaModel>();
+            _allMangas = new List<MangaModel.MangaModel>();
             var _rss = Tools.GetFeed(_RSSURL, Settings.Webtoons);
 
             foreach (var item in _rss.Items)
             {
-                var _manga = new MangaModel(Settings.Webtoons, _rss.Title.Text, item.Title.Text, item.Links[0].Uri.AbsoluteUri, Settings.Webtoons, DateTime.Now);
+                var _manga = new MangaModel.MangaModel(Settings.Webtoons, _rss.Title.Text, item.Title.Text, item.Links[0].Uri.AbsoluteUri, Settings.Webtoons, DateTime.Now);
                 _manga = Parse.Chapter(Settings.Webtoons, _manga);
                 _allMangas.Add(_manga);
             }
@@ -33,13 +32,13 @@ namespace MangaChecker.API.Providers
             return _allMangas;
         }
 
-        public static List<MangaModel> GetChapters(string title)
+        public static List<MangaModel.MangaModel> GetChapters(string title)
         {
             _allMangas = _getAllMangas();
             return _allMangas;
         }
 
-        public static MangaModel GetLastChapter(string title)
+        public static MangaModel.MangaModel GetLastChapter(string title)
         {
             _allMangas = _getAllMangas();
             return _allMangas[0];

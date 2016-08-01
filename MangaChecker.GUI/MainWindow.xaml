@@ -7,7 +7,7 @@
     xmlns:Converters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
     xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:p="clr-namespace:MangaChecker.GUI.Properties"
-    xmlns:views1="clr-namespace:MangaChecker.GUI.Views"
+    xmlns:views="clr-namespace:MangaChecker.GUI.Views"
     xmlns:viewmodels="clr-namespace:MangaChecker.GUI.Viewmodels"
     x:Class="MangaChecker.GUI.MainWindow"
     mc:Ignorable="d"
@@ -37,7 +37,7 @@
         <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}"
                                    LeftDrawerBackground="{DynamicResource MainBgColor}">
             <materialDesign:DrawerHost.LeftDrawerContent>
-                <ListBox MinWidth="212">
+                <ListBox MinWidth="212" SelectedIndex="{Binding MenuIndex}">
                     <!--<ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}"
                                   DockPanel.Dock="Top"
                                   HorizontalAlignment="Right" Margin="16"
@@ -63,13 +63,13 @@
                 </Grid.RowDefinitions>
                 <materialDesign:Transitioner Grid.Row="0"
                                              SelectedIndex="{Binding SelectedIndexTransitioner, Mode=TwoWay}">
-                    <views1:MainWindowView />
-                    <!--<TextBox TextChanged="DebugTextBox_TextChanged" x:Name="DebugTextBox"
+                    <views:MainWindowView />
+                    <TextBox TextChanged="DebugTextBox_OnTextChanged" x:Name="DebugTextBox"
                              Text="{Binding Debug, Source={x:Static p:Settings.Default}}" TextWrapping="Wrap"
                              Visibility="{Binding DebugVisibility}" Padding="5" Margin="10" />
-                    <manga:AddMenuView Padding="5" Margin="10" />
-                    <manga:SettingView x:Name="settingUserControl" Padding="5" Margin="10" />
-                    <manga:NewMangaView/>-->
+                    <views:AddMenuView Padding="5" Margin="10" />
+                    <views:SettingView x:Name="settingUserControl" Padding="5" Margin="10" />
+                    <views:NewMangaView/>
                 </materialDesign:Transitioner>
                 
                 <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left"
